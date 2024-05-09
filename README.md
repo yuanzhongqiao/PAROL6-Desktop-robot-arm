@@ -1,72 +1,67 @@
-# PAROL6-Desktop-robot-arm
-[![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)    ![Issues](https://img.shields.io/github/issues/PCrnjak/PAROL6-Desktop-robot-arm) ![release](https://img.shields.io/github/v/release/PCrnjak/PAROL6-Desktop-robot-arm) [![Powered by the Robotics Toolbox](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/rtb_powered.min.svg)](https://github.com/petercorke/robotics-toolbox-python)
-
-<img src="Images/img3.png" alt="drawing" width="5000"/>
-
-
-Join [Discord](https://discord.com/invite/prjUvjmGpZ ) community!
-
-PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach of PAROL6 was to be similar to industrial robots in terms of mechanical design, control software, and usability. Control software, GUI, and robots STL files are open-source. 
-
-# How to build / Where to buy?
-
-You can buy the PAROL6 robotic arm on our website: https://source-robotics.com
-
-If you want to Source all the parts yourself and build your own follow these steps:
-
-* Source all the parts from the [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
-* Follow [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions) to assemble your robot
-* Follow [DOCS](https://source-robotics.github.io/PAROL-docs/) to get your robot up and running.
-
-# Documentation:
-- [Official website](https://source-robotics.com)
-- [Commander software](https://github.com/PCrnjak/PAROL-commander-software) ------ [Minimal hardware specs!](https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md)
-- [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions)
-- [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
-- [DOCS](https://source-robotics.github.io/PAROL-docs/)
-- [Video tutorials](https://youtube.com/playlist?list=PLSueoDrBt5MMTL9O8qAWZiJrNIf8-29Qz&si=Zca3UZKENje9ifow)
-
-# More about PAROL6
-- [Forum](https://discourse.source-robotics.com/)
-- [Blog](https://source-robotics.com/blogs/blog)
-- [Youtube](https://www.youtube.com/channel/UCp3sDRwVkbm7b2M-2qwf5aQ)
-- [Hackaday](https://hackaday.io/project/191860-parol6-desktop-robotic-arm)
-- [Instagram](https://www.instagram.com/source_robotics/)
-- [DOCS](https://source-robotics.github.io/PAROL-docs/)
-- [Twitter](https://twitter.com/SourceRobotics)
-
-# 📢📢Contributing to the project 📢📢
-Some features are still missing on the software and hardware side of the PAROL6.<br />
-If you want to contribute you can open issues or pull requests in the GitHub repo to implement a feature! (Use DEV branch) <br />
-You can request or say you are working on a feature in the "general" channel of our [Discord](https://discord.com/invite/prjUvjmGpZ )<br />
-If you want to contribute to the project and don't know how you can help in the implementation of some of these features:
-
-General features:
-  - ROS2 support
-  - Moveit example
-  - ROBODK postprocessor
-  - TODO -> Stepper driver stages need to go to short or all fets low when the power button is pressed
-  - TODO ->Implement Swift simulator - https://github.com/jhavl/swift
-  - TODO -> Create executable files for Windows and Linux
-
-  PAROL6 commander software features:
-  - Reading GCODE commands
-  - Reading inputs
-  - implementing flow control (IF, ELSE...)
-  - Graphical simulator?
-  - Saving programs to the Control board Flash
-  - Offline execution of the code (from the flash)
-  - Blending in trajectory planner
-
-# Liability 
-1. The software and hardware are still in development and may contain bugs, errors, or incomplete features.
-2. Users are encouraged to use this software and hardware responsibly and at their own risk.
-
-# Support
-
-The majority of this project is open source and freely available to everyone. Your assistance, whether through donations or advice, is highly valued. Thank you!
-
- [![General badge](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/PCrnjak?locale.x=en_US)
-[![General badge](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/PCrnjak)
-
-# Project is under GPLv3 Licence
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PAROL6-桌面机械臂</font></font></h1><a id="user-content-parol6-desktop-robot-arm" class="anchor" aria-label="永久链接：PAROL6-桌面机器人手臂" href="#parol6-desktop-robot-arm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://opensource.org/license/gpl-3-0/" rel="nofollow"><img src="https://camo.githubusercontent.com/845cd60a0af53ab77e27789a9bf0d032fc9f8eff5f14696822ea9a9e8ee63135/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c76332d626c7565" alt="许可证：麻省理工学院" data-canonical-src="https://img.shields.io/badge/license-GPLv3-blue" style="max-width: 100%;"></a>    <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5817b0df22ccf758d41cb780b8abab90b82405972d4a07a4de7a42c6ccc54c43/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f5043726e6a616b2f5041524f4c362d4465736b746f702d726f626f742d61726d"><img src="https://camo.githubusercontent.com/5817b0df22ccf758d41cb780b8abab90b82405972d4a07a4de7a42c6ccc54c43/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f5043726e6a616b2f5041524f4c362d4465736b746f702d726f626f742d61726d" alt="问题" data-canonical-src="https://img.shields.io/github/issues/PCrnjak/PAROL6-Desktop-robot-arm" style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c403a20b487bb714b26eaee3d37576fdd61234698518f0c651b837bd428522c4/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f5043726e6a616b2f5041524f4c362d4465736b746f702d726f626f742d61726d"><img src="https://camo.githubusercontent.com/c403a20b487bb714b26eaee3d37576fdd61234698518f0c651b837bd428522c4/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f5043726e6a616b2f5041524f4c362d4465736b746f702d726f626f742d61726d" alt="发布" data-canonical-src="https://img.shields.io/github/v/release/PCrnjak/PAROL6-Desktop-robot-arm" style="max-width: 100%;"></a> <a href="https://github.com/petercorke/robotics-toolbox-python"><img src="https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/rtb_powered.min.svg" alt="由机器人工具箱提供支持" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/Images/img3.png"><img src="/PCrnjak/PAROL6-Desktop-robot-arm/raw/main/Images/img3.png" alt="绘画" width="2000" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入</font></font><a href="https://discord.com/invite/prjUvjmGpZ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不和谐</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PAROL6 是一款高性能 3D 打印桌面机械臂。 PAROL6 的设计方法在机械设计、控制软件和可用性方面与工业机器人类似。控制软件、GUI 和机器人 STL 文件都是开源的。</font></font></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何建造/哪里购买？</font></font></h1><a id="user-content-how-to-build--where-to-buy" class="anchor" aria-label="永久链接：如何构建/在哪里购买？" href="#how-to-build--where-to-buy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在我们的网站上购买 PAROL6 机械臂：</font></font><a href="https://source-robotics.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://source-robotics.com</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想自己采购所有部件并构建自己的部件，请按照以下步骤操作：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><a href="https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM"><font style="vertical-align: inherit;">从BOM</font></a><font style="vertical-align: inherit;">中获取所有零件</font></font><a href="https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM"><font style="vertical-align: inherit;"></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照</font></font><a href="https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搭建说明</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组装您的机器人</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照</font></font><a href="https://source-robotics.github.io/PAROL-docs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让您的机器人启动并运行。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档：</font></font></h1><a id="user-content-documentation" class="anchor" aria-label="永久链接： 文档：" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://source-robotics.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方网站</font></font></a></li>
+<li><a href="https://github.com/PCrnjak/PAROL-commander-software"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指挥官软件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">------</font></font><a href="https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最低硬件规格！</font></font></a></li>
+<li><a href="https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搭建说明</font></font></a></li>
+<li><a href="https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物料清单</font></font></a></li>
+<li><a href="https://source-robotics.github.io/PAROL-docs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档管理系统</font></font></a></li>
+<li><a href="https://youtube.com/playlist?list=PLSueoDrBt5MMTL9O8qAWZiJrNIf8-29Qz&amp;si=Zca3UZKENje9ifow" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视频教程</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于 PAROL6 的更多信息</font></font></h1><a id="user-content-more-about-parol6" class="anchor" aria-label="永久链接：有关 PAROL6 的更多信息" href="#more-about-parol6"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://discourse.source-robotics.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a></li>
+<li><a href="https://source-robotics.com/blogs/blog" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客</font></font></a></li>
+<li><a href="https://www.youtube.com/channel/UCp3sDRwVkbm7b2M-2qwf5aQ" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></a></li>
+<li><a href="https://hackaday.io/project/191860-parol6-desktop-robotic-arm" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哈卡迪</font></font></a></li>
+<li><a href="https://www.instagram.com/source_robotics/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram</font></font></a></li>
+<li><a href="https://source-robotics.github.io/PAROL-docs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档管理系统</font></font></a></li>
+<li><a href="https://twitter.com/SourceRobotics" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📢📢为项目做出贡献📢📢</font></font></h1><a id="user-content-contributing-to-the-project-" class="anchor" aria-label="永久链接：📢📢为项目做出贡献📢📢" href="#contributing-to-the-project-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PAROL6 的软件和硬件方面仍然缺少一些功能。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+如果您想做出贡献，可以在 GitHub 存储库中提出问题或拉取请求来实现功能！ （使用 DEV 分支）</font><font style="vertical-align: inherit;">
+如果您想为该项目做出贡献并且不知道如何帮助实现其中一些功能，您可以在我们的</font><a href="https://discord.com/invite/prjUvjmGpZ" rel="nofollow"><font style="vertical-align: inherit;">Discord</font></a></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+的“常规”频道中请求或说明您正在开发某个功能</font><font style="vertical-align: inherit;">：</font></font><a href="https://discord.com/invite/prjUvjmGpZ" rel="nofollow"><font style="vertical-align: inherit;"></font></a><br><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一般特征：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ROS2支持</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">移动示例</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ROBODK 后处理器</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TODO -&gt; 按下电源按钮时，步进驱动器级需要短路或所有 FET 都处于低电平</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TODO -&gt; 实现 Swift 模拟器 - </font></font><a href="https://github.com/jhavl/swift"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/jhavl/swift</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TODO -&gt; 创建适用于 Windows 和 Linux 的可执行文件</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PAROL6指挥软件特点：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读取GCODE命令</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读取输入</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实施流量控制（IF、ELSE...）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图形模拟器？</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将程序保存到控制板Flash</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">离线执行代码（从闪存）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">混合轨迹规划器</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">责任</font></font></h1><a id="user-content-liability" class="anchor" aria-label="永久链接： 责任" href="#liability"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件和硬件仍在开发中，可能包含错误、错误或不完整的功能。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们鼓励用户负责任地使用该软件和硬件，并自行承担风险。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></h1><a id="user-content-support" class="anchor" aria-label="永久链接： 支持" href="#support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目的大部分内容都是开源的，可供所有人免费使用。我们非常重视您的帮助，无论是通过捐赠还是建议。谢谢你！</font></font></p>
+<p dir="auto"><a href="https://paypal.me/PCrnjak?locale.x=en_US" rel="nofollow"><img src="https://camo.githubusercontent.com/2d91ef1f4811a4d103d53ce0f1f2d49fd00be666cb00d3513a4a82f8dc3bae0d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465" alt="通用徽章" data-canonical-src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&amp;logo=paypal&amp;logoColor=white" style="max-width: 100%;"></a>
+<a href="https://www.patreon.com/PCrnjak" rel="nofollow"><img src="https://camo.githubusercontent.com/14e4e20099c24b47f29c697dbe7e3555399d6bdbde97a9cbdd636e7e2d2f6f5b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617472656f6e2d4639363835343f7374796c653d666f722d7468652d6261646765266c6f676f3d70617472656f6e266c6f676f436f6c6f723d7768697465" alt="通用徽章" data-canonical-src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&amp;logo=patreon&amp;logoColor=white" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目采用 GPLv3 许可证</font></font></h1><a id="user-content-project-is-under-gplv3-licence" class="anchor" aria-label="永久链接：项目采用 GPLv3 许可证" href="#project-is-under-gplv3-licence"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+</article></div>
